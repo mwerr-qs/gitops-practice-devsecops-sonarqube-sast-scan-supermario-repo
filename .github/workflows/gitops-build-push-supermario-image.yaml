@@ -15,5 +15,5 @@ jobs:
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
       - name: Build and Push Docker Image
         run: |
-          docker build -t docker.io/mwerr/mariomodified:${{ env.VERSION }} .
-          docker push docker.io/mwerr/mariomodified:${{ env.VERSION }}
+          docker build -t docker.io/mwerr/supermariogitopsproject:${{ env.VERSION }} .
+          docker push docker.io/mwerr/supermariogitopsproject:${{ env.VERSION }}
